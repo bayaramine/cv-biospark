@@ -51,3 +51,33 @@ The class file (`yaac-another-awesome-cv.cls`) defines these domain-specific com
 - `\begin{cvcolumns}...\cvcolumn{content}...\end{cvcolumns}` — multi-column layout
 
 Color scheme can be changed in `CV.tex` via document class option (default: blue; options: green, red, indigo, orange, monochrome).
+
+
+
+
+## Project Goal & Positioning
+
+This CV is being adapted for **BioSpark** — Mohamed Amine's independent 
+consulting micro-enterprise (France, activity start April 2026).
+
+**Target audience:** Consulting/staffing companies placing biostatisticians 
+on time-limited pharma missions (IQVIA, Synergie, Quantics, etc.).
+
+**Positioning:** Senior biostatistician, 13+ years oncology/hematology 
+(solid tumors, CML, multiple myeloma), full lifecycle expertise, 
+growing ML/AI capabilities.
+
+## Branch Strategy
+- `main` → stable original version
+- `cv/biospark` → freelance consulting version (active branch)
+
+## Progress Tracker
+- [x] section_headline.tex — rewritten
+- [ ] section_experience.tex — in progress
+- [ ] section_competences.tex — to review
+- [ ] section_certifications.tex — to update
+
+## Conventions
+- Always work on `cv/biospark` branch
+- Commit after each section
+- Commit format: `cv/biospark: description`
