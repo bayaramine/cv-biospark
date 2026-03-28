@@ -77,7 +77,7 @@
 %\definecolor{basecolor}{rgb}{0.54,0.08,0.22} %Qatar
 %\definecolor{basecolor}{rgb}{0,0.34,0.72} %Khalifa university
 %\definecolor{maroon}{rgb}{138,21,56}
-\definecolor{basecolor}{RGB}{0,156,222}
+\definecolor{basecolor}{RGB}{0,124,122}
 \definecolor{gold}{rgb}{0.64,0.54,0.29}
 
 \ifundef{\@green} {
