@@ -412,7 +412,14 @@
 \newcommand\imageexperience[8]{
 \textbf{#1}                     & \textbf{#3, \textsc{#4}, #5}                                \\
 \textbf{#2}                     & 	\textit{#6}				                                   \\
-\begin{center} #8  \end{center} & \begin{minipage}[t] {\rightcolumnlength} #7 \end{minipage}	\\ 
+\begin{center} #8  \end{center} & \begin{minipage}[t] {\rightcolumnlength} #7 \end{minipage}	\\
+}
+
+% Compact 2-row variant for entries without logo or content bullets
+% Usage: \compactexperience{dates}{duration}{title}{institution}{location}{subtitle}
+\newcommand\compactexperience[6]{
+\textbf{#1}                     & \textbf{#3, \textsc{#4}, #5}                                \\
+\textbf{#2}                     & \textit{#6}                                                  \\
 }
 
 \newcommand\imagereferee[9]{
