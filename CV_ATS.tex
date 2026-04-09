@@ -1,0 +1,129 @@
+\documentclass[11pt,a4paper]{moderncv}
+\moderncvstyle{banking}
+\moderncvcolor{blue}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[scale=0.85,top=1.5cm,bottom=1.5cm]{geometry}
+\usepackage{hyperref}
+
+% No icons in banking style by default — suppress social icons
+\moderncvicons{empty}
+
+% Personal information
+\name{Mohamed Amine}{Bayar, PhD}
+\title{Independent Biostatistics Consultant \textbar{} Oncology \& Hematology}
+\address{Greater Paris}{France}
+\phone[mobile]{+33 (0) 184240347}
+\email{bayar.amine@gmail.com}
+\extrainfo{English, French \& Arabic}
+
+\begin{document}
+
+\makecvtitle
+
+%--------------------------------------------------
+% PROFILE
+%--------------------------------------------------
+\section{Profile}
+
+\begin{itemize}
+  \item PhD-level biostatistics consultant with 13+ years across the full clinical development lifecycle --- from Bayesian Phase I dose-escalation through Phase III pivotal design, high-stakes analysis milestones, and regulatory submission.
+  \item A profile combining frontline industry experience (Johnson \& Johnson, Novartis), academic research depth (PhD Paris-Saclay, 15+ publications, 1,200+ citations), hands-on ML/AI expertise applied to clinical and genomic data (co-invented patent WO2018002385A1), and advanced programming capabilities (R/Shiny, Python, SAS). Direct FDA and EMA interactions on pivotal trial design and regulatory strategy.
+  \item Core expertise in oncology and hematology (multiple myeloma, CML, solid tumors --- 8+ disease areas); methodology and regulatory experience transferable across therapeutic areas.
+\end{itemize}
+
+%--------------------------------------------------
+% TECHNICAL EXPERTISE
+%--------------------------------------------------
+\section{Technical Expertise}
+
+\begin{itemize}
+  \item \textbf{Statistical Methodology:} Survival analysis (Cox, competing risks, frailty models); linear, logistic, and mixed-effects models; Bayesian dose-escalation (CRM, BLRM, BOIN); group sequential and adaptive designs (seamless Phase II/III, platform trials); multiple testing procedures; Estimand framework (ICH E9(R1)); sample size calculation and event re-estimation; penalized regression (Lasso, Ridge, Elastic Net); PKPD and exposure-response modeling.
+  \item \textbf{Programming --- R:} tidyverse, ggplot2, RShiny, RMarkdown; OncoBayes2 (Bayesian BLRM dose-escalation); rpact, gsDesign (group sequential designs); survival, cmprsk (time-to-event); automated TFL pipeline development.
+  \item \textbf{Programming --- Python:} pandas, NumPy, scikit-learn (ML/AI); lifelines, scikit-survival (survival analysis); XGBoost, SHAP (predictive modeling and interpretability).
+  \item \textbf{Programming --- Other:} SAS (Base, Stat, Macro), SQL; nlmixr (PKPD/tumor growth modeling, R).
+  \item \textbf{ML/AI:} Predictive modeling and prognostic signature development; variable selection in high-dimensional genomic spaces; internal and external model validation (cross-validation, bootstrap); co-invented patent applying ML to oncology outcomes (WO2018002385A1).
+  \item \textbf{Medical Writing:} SAPs, TFL shells, CSRs, SCS/SCE, briefing documents, health authority responses, IBs.
+\end{itemize}
+
+%--------------------------------------------------
+% WORK EXPERIENCE
+%--------------------------------------------------
+\section{Work Experience}
+
+\cventry{Apr 2026 -- Present}{Independent Biostatistics Consultant}{BioSpark}{Remote, France}{}{%
+  Provides independent statistical consulting across the full drug development lifecycle, from early-phase design through regulatory submission. Developing expertise at the intersection of classical biostatistics and AI/ML methodologies.
+}
+
+\cventry{Feb 2023 -- Mar 2026}{Statistician --- Oncology \& Hematology}{Johnson \& Johnson}{Remote, France}{3 years \& 2 months}{%
+  Trial statistician across four oncology programs (multiple myeloma and NSCLC), spanning statistical design, 10+ high-stakes analysis milestones, and regulatory submission.
+  \begin{itemize}
+    \item \textbf{Analysis delivery (teclistamab, ciltacabtagene autoleucel):} Led statistical delivery of multiple analysis packages --- interim analyses, safety snapshots, and primary analyses --- across two cutting-edge myeloma programs in Phase II multi-arm settings: teclistamab (BCMA$\times$CD3 bispecific); and ciltacabtagene autoleucel (BCMA-directed CAR-T). Provided CRO statistical oversight on two studies and contributed to onboarding and mentoring of new statisticians joining the team.
+    \item \textbf{Statistical design and study conduct (ramantamig):} Served as lead statistician for Phase Ib and Phase III design on a first-in-class BCMA$\times$GPRC5D$\times$CD3 trispecific --- including BOIN dose-escalation design and simulation, Phase III event re-estimation, interim efficacy analyses, OS harm monitoring, and direct FDA/EMA interactions from concept through regulatory alignment (EOP2 briefing book submission and governance activities).
+    \item \textbf{Regulatory submission (amivantamab):} Contributed to the submission package for amivantamab in NSCLC --- extending regulatory experience beyond myeloma.
+    \item Authored Protocols statistical sections, SAPs, TFL shells, CSRs, and regulatory briefing documents; prepared written responses to FDA/EMA health authority queries.
+  \end{itemize}
+}
+
+\cventry{Nov 2019 -- Jan 2023}{Statistician --- CML Portfolio (Scemblix)}{Novartis}{Paris, France}{3 years 3 months}{%
+  \begin{itemize}
+    \item \textbf{Phase II statistical delivery (asciminib):} Led full statistical delivery for a 4-arm Phase II study --- from SAP development through database lock, primary analysis, and reporting --- forming part of the integrated evidence base supporting the approved label.
+    \item \textbf{Pediatric regulatory program (PIP/iPSP):} Led statistical methodology for a Phase Ib adult-to-pediatric bridging study developed under the joint EMA/FDA pediatric framework (Paediatric Investigation Plan and initial Pediatric Study Plan) --- a mandatory regulatory requirement for novel oncology agents. Implemented Bayesian BLRM dose-escalation using the OncoBayes2 R package, including prior calibration from adult data and simulation to support dose recommendation in a pediatric population.
+    \item \textbf{Pharmacometrics rotation (formal secondment):} Completed a 7-month full-time rotation within the Novartis pharmacometrics team --- nlmixr R package.
+  \end{itemize}
+}
+
+\cventry{Mar 2013 -- Oct 2019}{Statistician --- Solid Tumors}{Gustave Roussy Cancer Center}{Paris, France}{6 years 9 months}{%
+  Trial statistician on 7 clinical trials (Phase I to III) and multiple translational research projects, with responsibility for trial delivery, methodological research, and scientific publication.
+  \begin{itemize}
+    \item \textbf{Trial delivery and analysis milestones:} Led statistical activities on named programs including POP, CHIPASTIN, HPVRX, MELIPI RX, PACS04, IGRT-P, and others --- spanning breast (TNBC, HR+, metastatic, early), ovarian, melanoma, prostate, and pediatric oncology. Delivered full analysis lifecycles including interim, primary, and final analyses.
+    \item \textbf{Translational research \& prognostic modeling:} Developed and validated multiple prognostic models across tumor types --- including three sarcopenia prognostic models, a risk stratification model in pediatric intracranial ependymoma, and a survival prognostic model in second-line metastatic renal cell carcinoma.
+    \item \textbf{Precision medicine \& platform trials (SAFIR02, MAPPYACTS):} Substantial contributor to two landmark precision medicine genomic screening platforms --- delivering fully automated TFL pipelines for IDMC meetings. PhD research (Part 3) focused on optimal statistical analysis strategies for platform trials such as SAFIR02.
+    \item \textbf{Co-invented patented ML pipeline:} Built and validated a genomic prognostic signature for TNBC (Patent WO2018002385A1) --- owning the full pipeline from raw gene expression extraction through data normalization (fRMA), cross-platform merging, predictive modeling, and internal/external model validation; published in \textit{Annals of Oncology}.
+    \item \textbf{Methodological research \& academic output:} Generated 15+ peer-reviewed publications (1,200+ citations) across \textit{Annals of Oncology}, \textit{JCO}, \textit{CCR}, \textit{Statistics in Medicine}; Invited visiting scientist at Mayo Clinic, hosted by Prof.\ Daniel J.\ Sargent. Taught biostatistics and public health to undergraduates at Paris Sud University.
+  \end{itemize}
+}
+
+%--------------------------------------------------
+% EDUCATION
+%--------------------------------------------------
+\section{Education}
+
+\cventry{Oct 2016 -- Nov 2019}{PhD in Public Health --- Major Biostatistics}{Paris Saclay University}{Paris, France}{}{%
+  \begin{itemize}
+    \item Topic: Long-term evaluation of randomized Phase III clinical trials in oncology with rare diseases and biomarker-based subtypes.
+    \item Developed novel methodology for randomized trials with seamless Phase II/III, platform trials, and interim analysis strategies; and produced 3 first-author publications in \textit{Statistics in Medicine}, \textit{Statistical Methods in Medical Research}, and \textit{Computer Methods and Programs in Biomedicine}.
+  \end{itemize}
+}
+
+\cventry{Sep 2010 -- Jun 2013}{Engineer in Statistics}{ESSAI --- Universit\'{e} de Carthage}{Tunis, Tunisia}{}{%
+  Dipl\^{o}me National d'Ing\'{e}nieur --- Statistique et Analyse de l'Information
+}
+
+\cventry{Sep 2012 -- Oct 2013}{MSc in Computational Biology}{ENIT --- Universit\'{e} El Manar}{Tunis, Tunisia}{}{%
+  Dipl\^{o}me National de Master\`{e} de Recherche --- Traitement de l'Info.\ et Complexit\'{e} du Vivant
+}
+
+%--------------------------------------------------
+% INTELLECTUAL PROPERTY
+%--------------------------------------------------
+\section{Intellectual Property \& Innovation}
+
+\cvitem{Patent}{WO2018002385A1 --- hands-on ML application to medicine: built and validated a genomic signature to predict prognosis in Triple Negative Breast Cancer, owning the full pipeline from raw gene expression data to a clinically validated predictive model. \href{https://patents.google.com/patent/WO2018002385A1/en}{https://patents.google.com/patent/WO2018002385A1/en}}
+
+%--------------------------------------------------
+% SELECTED PUBLICATIONS
+%--------------------------------------------------
+\section{Selected Publications}
+
+\cvitem{2020}{\textbf{Mohamed Amine Bayar}, Gw\'{e}na\"{e}l Le Teuff, Franz Koenig, Marie-C\'{e}cile Le Deley, Stefan Michiels. \textit{Group sequential adaptive designs in series of time-to-event randomized trials in rare disease: a simulation study.} Statistical Methods in Medical Research, Jun.\ 2020. \href{https://pubmed.ncbi.nlm.nih.gov/31354106}{https://pubmed.ncbi.nlm.nih.gov/31354106}}
+
+\cvitem{2016}{\textbf{Mohamed Amine Bayar}, Gw\'{e}na\"{e}l Le Teuff, Stefan Michiels, Daniel J Sargent, Marie-C\'{e}cile Le Deley. \textit{New insights into the evaluation of randomized controlled trials for rare diseases over a long-term research horizon: a simulation study.} Statistics in Medicine, Aug.\ 2016. \href{https://www.ncbi.nlm.nih.gov/pubmed/27027783}{https://www.ncbi.nlm.nih.gov/pubmed/27027783}}
+
+\cvitem{2018}{C Criscitiello, \textbf{MA Bayar}, G Curigliano, FW Symmans, C Desmedt, H Bonnefoi, B Sinn, G Pruneri, Vicier, Pierga, Denkert, S Loibl, C Sotiriou, S Michiels, F Andr\'{e}. \textit{A gene signature to predict high tumor-infiltrating lymphocytes after neoadjuvant chemotherapy and outcome in patients with triple-negative breast cancer.} Annals of Oncology, Jan.\ 2018. \href{https://www.ncbi.nlm.nih.gov/pubmed/29077781}{https://www.ncbi.nlm.nih.gov/pubmed/29077781}}
+
+\cvitem{Full list}{15+ papers, 1,200+ citations: \href{https://scholar.google.com/citations?user=u6Ns41gAAAAJ&hl=en}{https://scholar.google.com/citations?user=u6Ns41gAAAAJ\&hl=en}}
+
+\end{document}
