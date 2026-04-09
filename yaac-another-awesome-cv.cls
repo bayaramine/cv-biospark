@@ -37,11 +37,11 @@
 
 % Dependences
 %A Few Useful Packages
-\RequirePackage[english,french]{babel}
+\RequirePackage[french, english]{babel}
 \RequirePackage[utf8]{luainputenc}
 \RequirePackage{fontspec} 					                 % for loading fonts
 \RequirePackage{url,parskip} 	    % other packages for formatting
-\RequirePackage[usenames,dvipsnames]{xcolor}
+\RequirePackage[dvipsnames]{xcolor}
 \RequirePackage{fullpage}
 \RequirePackage[left=1cm,right=1cm,top=1.5cm,bottom=1.5cm]{geometry}
 \RequirePackage{fontawesome}
@@ -77,7 +77,7 @@
 %\definecolor{basecolor}{rgb}{0.54,0.08,0.22} %Qatar
 %\definecolor{basecolor}{rgb}{0,0.34,0.72} %Khalifa university
 %\definecolor{maroon}{rgb}{138,21,56}
-\definecolor{basecolor}{RGB}{0,124,122}
+\definecolor{basecolor}{HTML}{2E86C1}
 \definecolor{gold}{rgb}{0.64,0.54,0.29}
 
 \ifundef{\@green} {
@@ -141,7 +141,7 @@
 \hyphenation{im-pre-se}
 
 % Setup fonts
-\defaultfontfeatures{Mapping=tex-text}
+\defaultfontfeatures{Ligatures=TeX}
 %
 
 % Define font to use according to localFont option
@@ -214,20 +214,23 @@
 
 % Render author's address
 % Usage: \address{<address>}
-\newcommand*{\address}[1]{{\color{basecolor}\faMapO}{\hspace*{.5em}#1\hspace*{.5em}}}
+\newcommand*{\address}[1]{{\color{basecolor}\faHome}{\hspace*{.5em}#1\hspace*{.5em}}}
 
 % Render author's infos
 % Usage: \infos{<infos>}
-\newcommand*{\infos}[1]{{\color{basecolor}\faInfo}{\hspace*{.5em}#1}\hspace*{.5em}}
+\newcommand*{\infos}[1]{{\color{basecolor}\faLanguage}{\hspace*{.5em}#1}\hspace*{.5em}}
 
 % Render author's linked-in (optional)
 % Usage: \linkedin{<linked-in-nick>}
-\newcommand*{\linkedin}{\sociallink{\faLinkedin}{https://www.linkedin.com/in/mohamed-amine-bayar-51166a94/}{Linkedin profile}}
+\newcommand*{\linkedin}{\sociallink{\faLinkedin}{https://www.linkedin.com/in/mohamed-amine-bayar-51166a94/}{Linkedin}}
 
+% Render author's Website (optional)
+% Usage: \website{<website>}
+\newcommand*{\website}{\sociallink{\faGlobe}{https://mohamedaminebayar.pythonanywhere.com/\#hero}{Website}}
 
 % Render author's email (optional)
 % Usage: \email{<email adress>}
-\newcommand*{\email}[1]{\sociallink{\faEnvelopeO}{mailto:#1}{e-mail contact}}
+\newcommand*{\email}[1]{\sociallink{\faEnvelope}{mailto:#1}{E-mail}}
 
 % Render a website link (optional)
 % Usage: \email{<email adress>}
@@ -271,7 +274,7 @@
       \begin{minipage}{\dimexpr\linewidth-\@photodiameter-2em}
     }
     \color{accentcolor}\user{\@firstname}{\@lastname}\color{black}\\
-    \small{\@socialinfo}
+    \normalsize{\@socialinfo}
     \end{minipage}
     \ifdef{\@photodiameter}{
       \begin{minipage}{\@photodiameter}
@@ -288,7 +291,7 @@
     \user{\@firstname}{\@lastname}%\\
     \hspace*{1em}\resumetitle{\@tagline}
     \smallskip\\
-    \small{\@socialinfo}
+    \normalsize{\@socialinfo}
     \end{minipage}
     \ifdef{\@photodiameter}{
       \begin{minipage}{\@photodiameter}
@@ -521,8 +524,8 @@
 
 \newcommand\paper[4]{
   \begin{minipage}[t]{\dimexpr(\linewidth) - 1.5em}
-    \textbf{\textsc{#1}} \hfill \textsc{#2}\\
-    \textsc{#3}, \textit{#4}\\[-.7em]
+    \sloppy\textbf{\textsc{#1}} \hfill \textsc{#2}\\
+    {#3}, \textit{#4}\\[-.7em]
   \end{minipage}
   \\*
 }
