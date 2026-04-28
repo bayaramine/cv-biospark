@@ -226,7 +226,7 @@
 
 % Render author's Website (optional)
 % Usage: \website{<website>}
-\newcommand*{\website}{\sociallink{\faGlobe}{https://mohamedaminebayar.pythonanywhere.com/\#hero}{Website}}
+\newcommand*{\website}{\sociallink{\faGlobe}{https://biospark.fr}{biospark.fr}}
 
 % Render author's email (optional)
 % Usage: \email{<email adress>}
